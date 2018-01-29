@@ -1,0 +1,16 @@
+@import '../_utilities/scss_vars';
+
+.Admin_Portal {
+  position: relative;
+  max-width: 1400px;
+  height: 100%;
+}
+
+.background_accent {
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  background-color: $lt_gray;
+  height: 100%;
+  width: 100%;
+}

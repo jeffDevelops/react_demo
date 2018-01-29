@@ -1,0 +1,41 @@
+@import '../../_utilities/scss_vars';
+
+.off_page {
+  transform: translateX(1200px);
+}
+
+.dismiss {
+  transform: translateX(-2400px);
+  transition: .5s;
+}
+
+.on_page {
+  animation-name: slidein; 
+  animation-duration: .8s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes slidein {
+  0% { transform: translateX(1200px); }
+  60% { transform: translateX(-30px); }
+  100% { transform: translateX(0px); }
+}
+
+.next_button {
+  float: right;
+
+  margin-right: 10px;
+
+  &:hover {
+    background-color: $dark_text;
+  }
+
+  &:active {
+    background-color: $navy;
+    box-shadow: none;
+  }
+
+  &:focus {
+    background-color: $navy;
+  }
+}

@@ -1,0 +1,25 @@
+@import '../../_utilities/scss_vars';
+
+//Override title text
+span.card-title.grey-text.text-darken-4 {
+  margin-left: 10px;
+}
+
+.add_button {
+  float: right;
+
+  margin-right: 10px;
+
+  &:hover {
+    background-color: $dark_text;
+  }
+
+  &:active {
+    background-color: $navy;
+    box-shadow: none;
+  }
+
+  &:focus {
+    background-color: $navy;
+  }
+}

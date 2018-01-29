@@ -1,0 +1,96 @@
+@import '../../_utilities/scss_vars';
+
+.off_page {
+  transform: translateX(1200px);
+}
+
+.dismiss {
+  transform: translateX(-2400px);
+  transition: .5s;
+}
+
+.on_page {
+  animation-name: slidein; 
+  animation-duration: .8s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes slidein {
+  0% { transform: translateX(1200px); }
+  60% { transform: translateX(-30px); }
+  100% { transform: translateX(0px); }
+}
+
+.number_of_devices .card-content {
+  padding: 24px 5px 5px 5px;
+}
+
+.number_of_devices span.card-title.grey-text.text-darken-4 {
+  margin: 0 auto;
+  width: 93%;
+}
+
+.survey_accordion .collapsible-header  {
+  padding: 20px 15px;
+  position: relative;
+}
+
+.survey_accordion .collapsible-body {
+  position: relative;
+  background-color: #f9f9f9;
+  padding: 15px 15px 0 46px;
+}
+
+.survey_accordion .row {
+  margin-bottom: 15px;
+}
+
+.filled_out .collapsible-header {
+  background-color: $navy;
+  color: #fff;
+}
+
+.survey_accordion .indicator {
+  position: absolute;
+  top: -25px;
+  right: 0;
+  z-index: 2;
+  color: #fff;
+}
+
+.survey_accordion .data_source_name {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  margin: 0 10px 0 0;
+}
+
+.number_of_devices .btn.next_button {
+  float: right;
+
+  margin-right: 3.5%;
+
+  &:hover {
+    background-color: $dark_text;
+  }
+
+  &:active {
+    background-color: $navy;
+    box-shadow: none;
+  }
+
+  &:focus {
+    background-color: $navy;
+  }
+}
+
+@media(max-width: 600px) {
+  .survey_accordion .data_source_name {
+    max-width: 210px;
+  }
+}

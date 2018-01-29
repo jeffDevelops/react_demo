@@ -1,0 +1,24 @@
+{
+  "name": "vsoc-scoping-app-api-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.prod.gpsvsoc.com:Rett/vSOC-scoping-app-api-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "method-override": "^2.3.10",
+    "mongoose": "^5.0.0-rc1",
+    "morgan": "^1.9.0",
+    "nodemailer": "^4.4.2"
+  }
+}

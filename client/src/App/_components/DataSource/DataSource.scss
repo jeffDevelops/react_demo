@@ -1,0 +1,38 @@
+@import '../../_utilities/scss_vars';
+
+.smaller_btn {
+  padding: 0 15px;
+
+  &:hover {
+    background-color: $dark_text;
+  }
+
+  &:active {
+    background-color: $navy;
+    box-shadow: none;
+  }
+
+  &:focus {
+    background-color: $navy;
+  }
+}
+
+div.col.input-field {
+  width: 100%;
+}
+
+.indent:first-child {
+  padding-left: 15px;
+}
+
+.indent:last-child {
+  padding-right: 15px;
+}
+
+.button_td {
+  width: 5%;
+}
+
+.indent .input-field.col label {
+  left: 0;
+}

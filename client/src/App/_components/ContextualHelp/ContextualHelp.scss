@@ -1,0 +1,28 @@
+@import '../../_utilities/scss_vars';
+
+.ContextualHelp__button {
+  position: absolute;
+  top: -30px;
+  right: 25px;
+  background-color: $navy;
+  box-shadow: $shadow;
+
+  &:hover {
+    box-shadow: $shadow_hover;
+    background-color: $navy;
+  }
+
+  &:focus {
+    background-color: $navy;
+    box-shadow: $shadow_hover;
+  }
+
+  &:focus i {
+    color: #fff;
+  }
+
+  &:active {
+    background-color: $navy;
+    box-shadow: $shadow;
+  }
+} 

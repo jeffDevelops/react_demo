@@ -1,0 +1,13 @@
+@import '../../_utilities/scss_vars';
+
+.Home__container {
+  height: 600px;
+  width: 100%;
+}
+
+.Header__header-bar--full-width {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  background-color: $navy;
+}

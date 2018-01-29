@@ -1,0 +1,69 @@
+// COLORS
+$navy:#001F4F; // Used in the header and link text, and for the call-to-action buttons
+$prompt_section: #23457C; // Used for the background color of the prompt section
+$user_input_section: #5670AC; // Used for the background-color of the user input section
+$dark_text: #333333;
+$lt_gray: rgb(250, 250, 250);
+
+// FONTS
+$prompt: normal normal 200 20px / 1 'Roboto', sans-serif;
+    // letter-spacing: 0.05em;
+
+$prompt_subtext: normal normal 400 16px / 1 'Roboto', sans-serif;
+    // letter-spacing: 0.02em;
+
+$sm_caps: normal small-caps 300 14px / 1 'Roboto', sans-serif; 
+    // for buttons and progress bar (may need to override for smaller text on progress bar)
+    // text-transform: lowercase;
+    // letter-spacing: 0.02em;
+
+// MATERIAL ELEMENT SHADOWS
+$shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$shadow_hover: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); 
+    // for button hover states and popover might look cool
+
+$materializePurple: color("materialize-purple", "lighten-2") !default;
+
+// BEM - Block Element Modifier
+
+// Just like in our Angular project, every component has its own dedicated scss file.
+// React does not afford us View Encapsulation, though. As a result, the css rules 
+// you write will bleed across the entire application, which as it grows could get 
+// extremely messy.
+
+// To solve this we can use a BEM-like naming convention:
+
+// (In the component JSX)
+// className="ComponentName__className--modifierName"
+
+
+
+// Example (No modifier)
+
+// HTML
+// <div className="Header__logo-image"></div>
+
+// CSS
+// .Header__logo-image {
+//   width: 100px;
+//   justify-self: center;
+// }
+
+// This would style the default logo-image only in the Header component
+
+// Same example (With modifier)
+
+// To add style modifications to that element, say a larger width on bigger screens, 
+// write the style rules the same way as before, override the width, and then name 
+// the CSS class with a modifier at the end:
+
+// HTML
+// <div className="Header__logo-image__greater-width"></div>
+
+// CSS
+// @media(min-width: 800px) {
+//  .Header__logo-image__greater-width {
+//      width: 400px;
+//      justify-self: center;
+//  }
+// }
